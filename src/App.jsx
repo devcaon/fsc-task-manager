@@ -1,9 +1,7 @@
-import Tasks from "./components/Tasks"
+import Tasks from './components/Tasks';
 
-function App () {
-  return (
-    <Tasks />
-  )
+function App() {
+  return <Tasks />;
 }
 
-export default App
+export default App;
