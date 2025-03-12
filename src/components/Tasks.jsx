@@ -31,7 +31,7 @@ function Tasks() {
 
       <ul>
         {messages.map((message) => (
-          <li>{message}</li>
+          <li key={message}>{message}</li>
         ))}
       </ul>
     </>
