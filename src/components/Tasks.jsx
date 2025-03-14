@@ -1,41 +1,33 @@
-import { useState } from "react";
-import Header from "./Header";
+import Button from "./Button";
+import AddIcon from "../assets/icons/add.svg?react";
+import TrashIcon from "../assets/icons/trash.svg?react";
 
-function Tasks() {
-  const [inputValue, setInputValue] = useState();
-  const [messages, setMessages] = useState([
-    "Hello World",
-    "FSC is the best course in the world",
-    "的更多帖子",
-  ]);
-
-  function handleButtonClick() {
-    setMessages([...messages, inputValue]);
-  }
-
+const Tasks = () => {
   return (
-    <>
-      <Header>Add a Task</Header>
-      <input
-        type="text"
-        placeholder="Create your task..."
-        className="input"
-        value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
-      />
-      <button className="button" onClick={handleButtonClick}>
-        Add Task
-      </button>
+    <div className="w-full px-9 py-16">
+      <div className="flex justify-between">
+        {/* LEFT */}
+        <div className="">
+          <span className="text-xs font-semibold text-[#00ADB5]">
+            Minhas Tarefas
+          </span>
+          <h2 className="text-xl font-semibold">Minhas Tarefas</h2>
+        </div>
 
-      <Header>My Tasks</Header>
-
-      <ul>
-        {messages.map((message) => (
-          <li key={message}>{message}</li>
-        ))}
-      </ul>
-    </>
+        {/* RIGHT */}
+        <div className="flex items-center gap-3">
+          <Button variant="ghost">
+            Limpar tarefas
+            <TrashIcon />
+          </Button>
+          <Button>
+            Nova Tarefa
+            <AddIcon />
+          </Button>
+        </div>
+      </div>
+    </div>
   );
-}
+};
 
 export default Tasks;
