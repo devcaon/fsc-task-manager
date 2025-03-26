@@ -36,6 +36,11 @@ const Tasks = () => {
     setTasks(newTasks);
   };
 
+  const handleDeleteClick = (taskId) => {
+    const newTasks = tasks.filter((task) => task.id !== taskId);
+    setTasks(newTasks);
+  };
+
   return (
     <div className="w-full space-y-6 px-8 py-16">
       {/* Botões e Cabeçalhos */}
@@ -70,7 +75,8 @@ const Tasks = () => {
             <TaskItem
               key={task.id}
               task={task}
-              handleTaskCheckboxClick={handleTaskCheckboxClick}
+              handleCheckboxClick={handleTaskCheckboxClick}
+              handleDeleteClick={handleDeleteClick}
             />
           ))}
         </div>
@@ -80,7 +86,8 @@ const Tasks = () => {
             <TaskItem
               key={task.id}
               task={task}
-              handleTaskCheckboxClick={handleTaskCheckboxClick}
+              handleCheckboxClick={handleTaskCheckboxClick}
+              handleDeleteClick={handleDeleteClick}
             />
           ))}
         </div>
@@ -90,7 +97,8 @@ const Tasks = () => {
             <TaskItem
               key={task.id}
               task={task}
-              handleTaskCheckboxClick={handleTaskCheckboxClick}
+              handleCheckboxClick={handleTaskCheckboxClick}
+              handleDeleteClick={handleDeleteClick}
             />
           ))}
         </div>
