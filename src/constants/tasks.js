@@ -11,7 +11,7 @@ const TASKS = [
     title: "Estudar TailwindCSS",
     description: "Estudar TailwindCSS para melhorar minhas habilidades",
     time: "Afternoon",
-    status: "pending",
+    status: "not_started",
   },
   {
     id: 3,
@@ -33,14 +33,14 @@ const TASKS = [
     title: "Ir para acadêmia",
     description: "Fazer exercícios físicos para manter a saúde em dia",
     time: "Evening",
-    status: "pending",
+    status: "not_started",
   },
   {
     id: 6,
     title: "Rezar o Rosário",
     description: "Rezar o Rosário para manter a fé em dia",
     time: "Morning",
-    status: "pending",
+    status: "not_started",
   },
   {
     id: 7,
@@ -48,6 +48,13 @@ const TASKS = [
     description: "Trabalhar no projeto para entregar no prazo",
     time: "Morning",
     status: "done",
+  },
+  {
+    id: 8,
+    title: "Ir para o curso de inglês",
+    description: "Ir para o curso de inglês para melhorar minhas habilidades",
+    time: "Afternoon",
+    status: "not_started",
   },
 ];
 
