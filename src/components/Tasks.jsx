@@ -37,7 +37,7 @@ const Tasks = () => {
   };
 
   return (
-    <div className="w-full px-9 py-16">
+    <div className="w-full space-y-6 px-8 py-16">
       {/* Botões e Cabeçalhos */}
       <div className="flex justify-between">
         {/* LEFT */}
@@ -50,7 +50,7 @@ const Tasks = () => {
 
         {/* RIGHT */}
         <div className="flex items-center gap-3">
-          <Button variant="ghost">
+          <Button variant="ghost" className="flex items-center gap-2">
             Limpar tarefas
             <TrashIcon />
           </Button>
@@ -62,7 +62,7 @@ const Tasks = () => {
       </div>
 
       {/* Tarefas */}
-      <div className="mt-6 rounded-xl bg-white p-8">
+      <div className="rounded-xl bg-white p-8">
         <div className="space-y-3">
           <TasksSeparator title="Manhã" icon={<SunIcon />} />
           {/* tarefas de manhã */}
