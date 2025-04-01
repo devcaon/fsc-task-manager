@@ -1,8 +1,10 @@
-import CheckIcon from "../assets/icons/check.svg?react";
-import LoaderIcon from "../assets/icons/loader.svg?react";
-import DatailsIcon from "../assets/icons/details.svg?react";
-import ClockIcon from "../assets/icons/clock-4.svg?react";
-import TrashIcon from "../assets/icons/trash.svg?react";
+import {
+  CheckIcon,
+  ClockIcon,
+  DatailsIcon,
+  LoaderIcon,
+  TrashIcon,
+} from "../assets/icons";
 import Button from "./Button";
 
 const TaskItem = ({ task, handleCheckboxClick, handleDeleteClick }) => {
