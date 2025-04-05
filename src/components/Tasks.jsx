@@ -65,16 +65,23 @@ const Tasks = () => {
 
         {/* RIGHT */}
         <div className="flex items-center gap-3">
-          <Button variant="ghost" className="flex items-center gap-2">
+          <Button
+            variant="ghost"
+            className="flex items-center gap-2"
+            size="small"
+          >
             Limpar tarefas
             <TrashIcon />
           </Button>
-          <Button onClick={() => setAddTaskDialogIsOpen(true)}>
+          <Button onClick={() => setAddTaskDialogIsOpen(true)} size="small">
             Nova Tarefa
             <AddIcon />
           </Button>
 
-          <AddTaskDialog isOpen={addTaskDialogIsOpen} />
+          <AddTaskDialog
+            isOpen={addTaskDialogIsOpen}
+            handleClose={() => setAddTaskDialogIsOpen(false)}
+          />
         </div>
       </div>
 
