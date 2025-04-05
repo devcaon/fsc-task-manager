@@ -18,9 +18,9 @@ const Tasks = () => {
   const [tasks, setTasks] = useState(TASKS);
   const [addTaskDialogIsOpen, setAddTaskDialogIsOpen] = useState(false);
 
-  const morningTasks = tasks.filter((task) => task.time === "Morning");
-  const afternoonTasks = tasks.filter((task) => task.time === "Afternoon");
-  const nightTasks = tasks.filter((task) => task.time === "Evening");
+  const morningTasks = tasks.filter((task) => task.time === "morning");
+  const afternoonTasks = tasks.filter((task) => task.time === "afternoon");
+  const nightTasks = tasks.filter((task) => task.time === "evening");
 
   const handleTaskCheckboxClick = (taskId) => {
     const newTasks = tasks.map((task) => {
